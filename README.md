@@ -286,8 +286,6 @@ Reusable analytical measures were created in the SSAS Tabular model.
 
 These measures centralize commonly used business calculations within the semantic model.
 
-[View DAX Measures](03_SSAS_Tabular/DAX/measures.md)
-
 ---
 
 # 6. Power BI
