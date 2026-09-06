@@ -33,19 +33,17 @@ To transform raw CRM and ERP data into a structured analytical platform that sup
 
 ## High-Level Architecture
 
-The high-level architecture provides an overview of the technology flow of the platform.
+The high-level architecture provides an overview of the end-to-end technology flow of the platform.
 
-![High-Level Architecture](architecture%20visuals/02%20Enterprise%20Sales%20Analytics%20Data%20Platform%20High%20Level%20Architecture.png)
+![Enterprise Sales Analytics Data Platform — High-Level Architecture](docs/02%20Enterprise%20Sales%20Analytics%20Data%20Platform%20High%20Level%20Architecture.png)
 
 ---
 
 ## Detailed Architecture
 
-The detailed architecture shows the complete solution, including the SQL Server Data Warehouse layers, Gold-layer Star Schema, EDA and Advanced Analytics, SSAS Tabular semantic model, DAX measures, and Power BI.
+The detailed architecture illustrates the complete solution, including the SQL Server Data Warehouse layers, Gold-layer Star Schema, EDA and Advanced Analytics, SSAS Tabular semantic model, DAX measures, and Power BI.
 
-![Detailed Architecture](architecture%20visuals/04%20Enterprise%20Sales%20Analytics%20Data%20Platform%20Architecture.png)
-
----
+![Enterprise Sales Analytics Data Platform — Detailed Architecture](docs/04%20Enterprise%20Sales%20Analytics%20Data%20Platform%20Architecture.png)
 
 # Technology Stack
 
