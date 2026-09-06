@@ -1,0 +1,366 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-IN",
+    "dataSources": [
+      {
+        "name": "SqlServer GANESHSQLEXPRESS DataWarehouse",
+        "connectionString": "Provider=SQLOLEDB;Data Source=GANESH\\SQLEXPRESS;Initial Catalog=DataWarehouse;User ID=sqluser;Persist Security Info=true",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "dim_customers",
+        "columns": [
+          {
+            "name": "customer_key",
+            "dataType": "int64",
+            "sourceColumn": "customer_key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "customer_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_number",
+            "dataType": "string",
+            "sourceColumn": "customer_number",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "first_name",
+            "dataType": "string",
+            "sourceColumn": "first_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "last_name",
+            "dataType": "string",
+            "sourceColumn": "last_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "sourceColumn": "country",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "marital_status",
+            "dataType": "string",
+            "sourceColumn": "marital_status",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "gender",
+            "dataType": "string",
+            "sourceColumn": "gender",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "birthdate",
+            "dataType": "string",
+            "sourceColumn": "birthdate",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "create_date",
+            "dataType": "string",
+            "sourceColumn": "create_date",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_customers",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [gold].[dim_customers].*   FROM [gold].[dim_customers] ",
+              "dataSource": "SqlServer GANESHSQLEXPRESS DataWarehouse"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [gold].[dim_customers].*   FROM [gold].[dim_customers] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_customers"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "gold"
+          }
+        ]
+      },
+      {
+        "name": "dim_products",
+        "columns": [
+          {
+            "name": "product_key",
+            "dataType": "int64",
+            "sourceColumn": "product_key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "product_id",
+            "dataType": "int64",
+            "sourceColumn": "product_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "product_number",
+            "dataType": "string",
+            "sourceColumn": "product_number",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "product_name",
+            "dataType": "string",
+            "sourceColumn": "product_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "category_id",
+            "dataType": "string",
+            "sourceColumn": "category_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "category",
+            "dataType": "string",
+            "sourceColumn": "category",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "subcategory",
+            "dataType": "string",
+            "sourceColumn": "subcategory",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "maintenance",
+            "dataType": "string",
+            "sourceColumn": "maintenance",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "cost",
+            "dataType": "int64",
+            "sourceColumn": "cost",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "product_line",
+            "dataType": "string",
+            "sourceColumn": "product_line",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "start_date",
+            "dataType": "string",
+            "sourceColumn": "start_date",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_products",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [gold].[dim_products].*   FROM [gold].[dim_products] ",
+              "dataSource": "SqlServer GANESHSQLEXPRESS DataWarehouse"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [gold].[dim_products].*   FROM [gold].[dim_products] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_products"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "gold"
+          }
+        ]
+      },
+      {
+        "name": "fact_sales",
+        "columns": [
+          {
+            "name": "order_number",
+            "dataType": "string",
+            "sourceColumn": "order_number",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "product_key",
+            "dataType": "int64",
+            "sourceColumn": "product_key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "customer_key",
+            "dataType": "int64",
+            "sourceColumn": "customer_key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "order_date",
+            "dataType": "string",
+            "sourceColumn": "order_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "shipping_date",
+            "dataType": "string",
+            "sourceColumn": "shipping_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "due_date",
+            "dataType": "string",
+            "sourceColumn": "due_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "sales_amount",
+            "dataType": "int64",
+            "sourceColumn": "sales_amount",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "quantity",
+            "dataType": "int64",
+            "sourceColumn": "quantity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "price",
+            "dataType": "double",
+            "sourceColumn": "price",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "type": "calculated",
+            "name": "order year",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": " YEAR(fact_sales[order_date])"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_sales",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [gold].[fact_sales].*   FROM [gold].[fact_sales] ",
+              "dataSource": "SqlServer GANESHSQLEXPRESS DataWarehouse"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Sales",
+            "expression": " SUM(fact_sales[sales_amount])"
+          },
+          {
+            "name": "Total Quantity",
+            "expression": " SUM(fact_sales[quantity])"
+          },
+          {
+            "name": "Total Orders",
+            "expression": " DISTINCTCOUNT(fact_sales[order_number])"
+          },
+          {
+            "name": "Total Customers",
+            "expression": " DISTINCTCOUNT(dim_customers[customer_id])"
+          },
+          {
+            "name": "Total Purchasing Customers",
+            "expression": " DISTINCTCOUNT(fact_sales[customer_key])"
+          },
+          {
+            "name": "Total Products",
+            "expression": " DISTINCTCOUNT(fact_sales[product_key])"
+          },
+          {
+            "name": "Average Order Value",
+            "expression": " DIVIDE([Total Sales],[Total Orders])",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Least Expensive Product Price",
+            "expression": " MIN(fact_sales[price])"
+          },
+          {
+            "name": "Most Expensive Product Price",
+            "expression": " MAX(fact_sales[price])"
+          },
+          {
+            "name": "Avg Product Price",
+            "expression": " AVERAGE(fact_sales[price])",
+            "formatString": "0.00"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [gold].[fact_sales].*   FROM [gold].[fact_sales] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "fact_sales"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "gold"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "54623d65-5e63-4bd1-bbbf-d95372e64952",
+        "fromTable": "fact_sales",
+        "fromColumn": "product_key",
+        "toTable": "dim_products",
+        "toColumn": "product_key"
+      },
+      {
+        "name": "d3614cb8-c504-41f0-8fad-e771b604c8cf",
+        "fromTable": "fact_sales",
+        "fromColumn": "customer_key",
+        "toTable": "dim_customers",
+        "toColumn": "customer_key"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
