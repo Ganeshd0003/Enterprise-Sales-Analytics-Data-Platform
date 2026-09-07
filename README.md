@@ -331,7 +331,6 @@ The dashboard provides an executive-level overview of sales performance.
 ```text
 Enterprise-Sales-Analytics-Data-Platform/
 │
-├── README.md
 │
 ├── 01_Data_Warehouse/
 │   │
@@ -402,7 +401,9 @@ Enterprise-Sales-Analytics-Data-Platform/
 │   │   └── sales-report.pbix
 │   │
 │   └── Screenshots/
-│       └── 01_Executive_Sales_Overview.png
+│       ├── 01_Executive_Sales_Overview.png
+│       ├── 02_Customer_and_Product_Analysis.png
+│       └── power bi relationship.png
 │
 ├── docs/
 │   ├── 01 Enterprise Sales Analytics Data Platform High Level Architecture Readme.png
