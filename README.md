@@ -1,6 +1,6 @@
 # Enterprise Sales Analytics Data Platform
 
-An end-to-end sales analytics platform built using **SQL Server, T-SQL, SSAS Tabular, DAX, and Power BI**.
+An end-to-end sales analytics platform built using **SQL Server, SQL, SSAS Tabular, DAX, and Power BI**.
 
 This project integrates CRM and ERP datasets, builds a SQL Server Data Warehouse using **Medallion Architecture**, creates a **Gold-layer Star Schema**, performs SQL-based EDA and Advanced Analytics, develops an **SSAS Tabular semantic model with reusable DAX measures**, and delivers an interactive **Power BI dashboard through a Live Connection to SSAS**.
 
@@ -50,7 +50,7 @@ The detailed architecture illustrates the complete solution, including the SQL S
 | Technology | Purpose |
 |---|---|
 | **Microsoft SQL Server** | Data warehouse and analytical database |
-| **T-SQL** | Data loading, transformation, quality checks, analysis, and reporting |
+| **SQL** | Data loading, transformation, quality checks, analysis, and reporting |
 | **Medallion Architecture** | Bronze, Silver, and Gold data organization |
 | **Star Schema** | Analytical data modeling |
 | **SSAS Tabular** | Semantic and analytical modeling |
