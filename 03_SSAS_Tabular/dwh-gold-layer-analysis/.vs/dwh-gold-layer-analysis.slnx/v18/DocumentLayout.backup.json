@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ganes\\OneDrive\\Desktop\\sql-data-warehouse-ssas-analytics\\dwh-gold-layer-analysis\\",
+  "WorkspaceRootPath": "C:\\Users\\ganes\\OneDrive\\Desktop\\Enterprise-Sales-Analytics-Data-Platform\\03_SSAS_Tabular\\dwh-gold-layer-analysis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CE414BB-95B2-4C99-9E03-51BA72086E22}|dwh-gold-layer-analysis.smproj|C:\\Users\\ganes\\OneDrive\\Desktop\\sql-data-warehouse-ssas-analytics\\dwh-gold-layer-analysis\\Model.bim||{9EE154FA-5389-414A-9FA1-1D9F0221267D}",
+      "AbsoluteMoniker": "D:0:0:{8CE414BB-95B2-4C99-9E03-51BA72086E22}|dwh-gold-layer-analysis.smproj|C:\\Users\\ganes\\OneDrive\\Desktop\\Enterprise-Sales-Analytics-Data-Platform\\03_SSAS_Tabular\\dwh-gold-layer-analysis\\Model.bim||{9EE154FA-5389-414A-9FA1-1D9F0221267D}",
       "RelativeMoniker": "D:0:0:{8CE414BB-95B2-4C99-9E03-51BA72086E22}|dwh-gold-layer-analysis.smproj|solutionrelative:Model.bim||{9EE154FA-5389-414A-9FA1-1D9F0221267D}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Model.bim",
-              "DocumentMoniker": "C:\\Users\\ganes\\OneDrive\\Desktop\\sql-data-warehouse-ssas-analytics\\dwh-gold-layer-analysis\\Model.bim",
+              "DocumentMoniker": "C:\\Users\\ganes\\OneDrive\\Desktop\\Enterprise-Sales-Analytics-Data-Platform\\03_SSAS_Tabular\\dwh-gold-layer-analysis\\Model.bim",
               "RelativeDocumentMoniker": "Model.bim",
-              "ToolTip": "C:\\Users\\ganes\\OneDrive\\Desktop\\sql-data-warehouse-ssas-analytics\\dwh-gold-layer-analysis\\Model.bim",
+              "ToolTip": "C:\\Users\\ganes\\OneDrive\\Desktop\\Enterprise-Sales-Analytics-Data-Platform\\03_SSAS_Tabular\\dwh-gold-layer-analysis\\Model.bim",
               "RelativeToolTip": "Model.bim",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-09-05T14:17:37.653Z",

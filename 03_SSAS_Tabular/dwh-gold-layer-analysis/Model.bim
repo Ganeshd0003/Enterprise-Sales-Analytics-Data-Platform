@@ -337,6 +337,300 @@
             "value": "gold"
           }
         ]
+      },
+      {
+        "name": "report_customers",
+        "columns": [
+          {
+            "name": "customer_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_number",
+            "dataType": "string",
+            "sourceColumn": "customer_number",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "customer_name",
+            "dataType": "string",
+            "sourceColumn": "customer_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "sourceColumn": "country",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "gender",
+            "dataType": "string",
+            "sourceColumn": "gender",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "marital_status",
+            "dataType": "string",
+            "sourceColumn": "marital_status",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "age",
+            "dataType": "int64",
+            "sourceColumn": "age",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "age_group",
+            "dataType": "string",
+            "sourceColumn": "age_group",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "customer_segment",
+            "dataType": "string",
+            "sourceColumn": "customer_segment",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "last_order_date",
+            "dataType": "string",
+            "sourceColumn": "last_order_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "recency",
+            "dataType": "int64",
+            "sourceColumn": "recency",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_orders",
+            "dataType": "int64",
+            "sourceColumn": "total_orders",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_sales",
+            "dataType": "int64",
+            "sourceColumn": "total_sales",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_quantity",
+            "dataType": "int64",
+            "sourceColumn": "total_quantity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_products",
+            "dataType": "int64",
+            "sourceColumn": "total_products",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "lifespan",
+            "dataType": "int64",
+            "sourceColumn": "lifespan",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "avg_order_value",
+            "dataType": "int64",
+            "sourceColumn": "avg_order_value",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "avg_monthly_spend",
+            "dataType": "int64",
+            "sourceColumn": "avg_monthly_spend",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "report_customers",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [gold].[report_customers].*   FROM [gold].[report_customers] ",
+              "dataSource": "SqlServer GANESHSQLEXPRESS DataWarehouse"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [gold].[report_customers].*   FROM [gold].[report_customers] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "report_customers"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "gold"
+          }
+        ]
+      },
+      {
+        "name": "report_products",
+        "columns": [
+          {
+            "name": "product_id",
+            "dataType": "int64",
+            "sourceColumn": "product_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "product_key",
+            "dataType": "int64",
+            "sourceColumn": "product_key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "product_name",
+            "dataType": "string",
+            "sourceColumn": "product_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "category_id",
+            "dataType": "string",
+            "sourceColumn": "category_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "category",
+            "dataType": "string",
+            "sourceColumn": "category",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "subcategory",
+            "dataType": "string",
+            "sourceColumn": "subcategory",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "cost",
+            "dataType": "int64",
+            "sourceColumn": "cost",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "product_line",
+            "dataType": "string",
+            "sourceColumn": "product_line",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "start_date",
+            "dataType": "string",
+            "sourceColumn": "start_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "maintenance",
+            "dataType": "string",
+            "sourceColumn": "maintenance",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "last_sale_date",
+            "dataType": "string",
+            "sourceColumn": "last_sale_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "recency_in_months",
+            "dataType": "int64",
+            "sourceColumn": "recency_in_months",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "product_segment",
+            "dataType": "string",
+            "sourceColumn": "product_segment",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "lifespan",
+            "dataType": "int64",
+            "sourceColumn": "lifespan",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_orders",
+            "dataType": "int64",
+            "sourceColumn": "total_orders",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_sales",
+            "dataType": "int64",
+            "sourceColumn": "total_sales",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_quantity",
+            "dataType": "int64",
+            "sourceColumn": "total_quantity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_customers",
+            "dataType": "int64",
+            "sourceColumn": "total_customers",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "avg_selling_price",
+            "dataType": "double",
+            "sourceColumn": "avg_selling_price",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "avg_order_revenue",
+            "dataType": "int64",
+            "sourceColumn": "avg_order_revenue",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "avg_monthly_revenue",
+            "dataType": "int64",
+            "sourceColumn": "avg_monthly_revenue",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "report_products",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [gold].[report_products].*   FROM [gold].[report_products] ",
+              "dataSource": "SqlServer GANESHSQLEXPRESS DataWarehouse"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [gold].[report_products].*   FROM [gold].[report_products] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "report_products"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "gold"
+          }
+        ]
       }
     ],
     "relationships": [
@@ -353,6 +647,24 @@
         "fromColumn": "customer_key",
         "toTable": "dim_customers",
         "toColumn": "customer_key"
+      },
+      {
+        "name": "693d6721-c578-4ece-b146-f504032455a0",
+        "fromCardinality": "one",
+        "fromTable": "dim_products",
+        "fromColumn": "product_key",
+        "toTable": "report_products",
+        "toColumn": "product_key",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "d17a25f7-717e-4530-9725-bb5dfc3366d7",
+        "fromCardinality": "one",
+        "fromTable": "dim_customers",
+        "fromColumn": "customer_id",
+        "toTable": "report_customers",
+        "toColumn": "customer_id",
+        "crossFilteringBehavior": "bothDirections"
       }
     ],
     "annotations": [
