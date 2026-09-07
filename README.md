@@ -404,7 +404,7 @@ Enterprise-Sales-Analytics-Data-Platform/
 │   └── Screenshots/
 │       └── 01_Executive_Sales_Overview.png
 │
-├── architecture visuals/
+├── docs/
 │   ├── 01 Enterprise Sales Analytics Data Platform High Level Architecture Readme.png
 │   ├── 02 Enterprise Sales Analytics Data Platform High Level Architecture.png
 │   ├── 03 Enterprise Sales Analytics Data Platform Architecture Readme.png
