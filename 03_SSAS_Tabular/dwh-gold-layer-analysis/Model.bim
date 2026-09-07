@@ -282,7 +282,7 @@
         "measures": [
           {
             "name": "Total Sales",
-            "expression": " SUM(fact_sales[sales_amount])"
+            "expression": " SUM(fact_sales[sales_amount]) "
           },
           {
             "name": "Total Quantity",
@@ -297,7 +297,7 @@
             "expression": " DISTINCTCOUNT(dim_customers[customer_id])"
           },
           {
-            "name": "Total Purchasing Customers",
+            "name": "Purchasing Customers",
             "expression": " DISTINCTCOUNT(fact_sales[customer_key])"
           },
           {
