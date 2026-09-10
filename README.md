@@ -321,8 +321,14 @@ The dashboard provides an executive-level overview of sales performance.
 - Sales by Country
 
 ### Dashboard Preview
+#### Executive Sales Overview
 
 ![Sales Performance Overview](04_Power_BI/Screenshots/01_Executive_Sales_Overview.png)
+
+---
+#### Customer and Product Analysis
+
+![Sales Performance Overview](04_Power_BI/Screenshots/02_Customer_and_Product_Analysis.png)
 
 ---
 
